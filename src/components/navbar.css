@@ -1,0 +1,48 @@
+/* Navbar link styling */
+.navbar-nav .nav-link {
+    position: relative;
+    color: rgb(255, 255, 255); /* Change to your desired color */
+    text-decoration: none; /* Remove default underline */
+    padding-bottom: 5px; /* Add some space at the bottom for the underline */
+    margin-left: 5rem;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .navbar-nav .nav-link:hover{
+    color: white;
+  }
+  /* Underline hover effect */
+  .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    left: 0;
+    bottom: 0;
+    background-color: #fae608; /* Color of the underline */
+    transition: width 0.3s ease;
+  }
+  
+  /* On hover, the underline appears */
+  .navbar-nav .nav-link:hover::after {
+    width: 100%; /* Underline expands to full width */
+  }
+  .donate-button {
+    background-color: #ff5722; /* Example color */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .donate-button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+  }
+  
+  
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: white  !important;
+}

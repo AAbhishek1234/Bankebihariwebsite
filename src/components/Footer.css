@@ -1,0 +1,10 @@
+.bg{
+    margin-top: 3rem !important;
+    height: 17rem !important;
+    background-color: white !important;
+    color: black !important;
+}
+.li li a{
+    text-decoration: none;
+    color: black !important;
+}
