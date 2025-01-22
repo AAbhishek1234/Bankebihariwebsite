@@ -12,9 +12,9 @@ function Home() {
     <Navbar></Navbar>
     <Slider></Slider>
     <About></About>
-    {/* <Timming></Timming>
+    <Timming></Timming>
     
-    <TempleHistory></TempleHistory>
+    {/* <TempleHistory></TempleHistory>
     <Footer></Footer> */}
     </>
   )
