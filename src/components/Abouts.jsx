@@ -284,7 +284,6 @@ const About = () => {
                   alt={festival.title}
                   style={{
                     height: "16rem",
-                    objectFit: "cover",
                   }}
                 />
                 <Card.Body>
