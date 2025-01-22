@@ -11,8 +11,8 @@ function Home() {
     <>
     <Navbar></Navbar>
     <Slider></Slider>
-    {/* <About></About>
-    <Timming></Timming>
+    <About></About>
+    {/* <Timming></Timming>
     
     <TempleHistory></TempleHistory>
     <Footer></Footer> */}
