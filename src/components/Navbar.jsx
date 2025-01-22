@@ -53,12 +53,16 @@
 
 // export default Navbar;
 
+
+
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-scroll";
 import "./navbar.css";
 
 const MyNavbar = () => {
+  const navbarHeight = window.innerWidth < 768 ? 60 : 80;
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -95,7 +99,13 @@ const MyNavbar = () => {
       </div>
 
       {/* Navbar Section */}
-      <Navbar expand="lg" className="navbar-custom">
+      <Navbar
+        expand="lg"
+        className="navbar-custom"
+        style={{
+          marginTop: "0.00rem", // Push navbar below the images
+        }}
+      >
         <Container>
           <Navbar.Brand
             onClick={scrollToTop}
@@ -108,44 +118,61 @@ const MyNavbar = () => {
           >
             LOGO
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbar-nav" className="custom-toggler" />
+          <Navbar.Toggle
+            aria-controls="navbar-nav"
+            className="custom-toggler"
+          />
           <Navbar.Collapse id="navbar-nav">
             <Nav className="ms-auto">
+              {/* Home Link */}
               <Nav.Link>
                 <Link
                   to="top"
                   smooth={true}
                   duration={10}
+                  offset={-navbarHeight}
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
                   className="nav-link-custom"
                 >
                   Home
                 </Link>
               </Nav.Link>
+
+              {/* About Us Link */}
               <Nav.Link>
                 <Link
                   to="about-us"
                   smooth={true}
                   duration={10}
+                  offset={-navbarHeight}
                   className="nav-link-custom"
                 >
                   About Mandir
                 </Link>
               </Nav.Link>
+
+              {/* Services Link */}
               <Nav.Link>
                 <Link
                   to="Our-Programs"
                   smooth={true}
                   duration={10}
+                  offset={-navbarHeight}
                   className="nav-link-custom"
                 >
                   Visit Mandir
                 </Link>
               </Nav.Link>
+
+              {/* Contact Us Link */}
               <Nav.Link>
                 <Link
                   to="Footer"
                   smooth={true}
                   duration={10}
+                  offset={-navbarHeight}
                   className="nav-link-custom"
                 >
                   Blogs
