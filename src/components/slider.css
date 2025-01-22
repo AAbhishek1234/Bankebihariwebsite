@@ -15,8 +15,8 @@
       width: 100%;
       height: 20rem; /* Adjust the height for smaller screens */
       @media (max-width: 768px) {
-        .slider-container {
+        .d-blockx {
           width: 100%;
-          height: 10rem !important;
+          height: 25rem !important;
         }
       }

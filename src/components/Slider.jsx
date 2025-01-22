@@ -1,12 +1,12 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-
+import './slider.css'
 function Slider() {
   return (
     <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-blockx w-100"
           src="/images/Slider-image2.webp"
           alt="Second Slide"
           style={{ height: "40rem" }}
@@ -19,7 +19,7 @@ function Slider() {
 
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-blockx w-100"
           src="/images/Slider-image3.jpeg"
           alt="Third Slide"
           style={{ height: "40rem" }}
