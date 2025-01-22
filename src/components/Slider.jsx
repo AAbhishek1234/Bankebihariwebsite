@@ -7,7 +7,7 @@ function Slider() {
       <Carousel.Item>
         <img
           className="d-blockx w-100"
-          src="/images/Slider-image2.webp"
+          src="/images/sl1.jpg"
           alt="Second Slide"
           style={{ height: "40rem" }}
         />
