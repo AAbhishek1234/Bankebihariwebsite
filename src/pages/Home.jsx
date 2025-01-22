@@ -11,11 +11,11 @@ function Home() {
     <>
     <Navbar></Navbar>
     <Slider></Slider>
-    <About></About>
+    {/* <About></About>
     <Timming></Timming>
     
     <TempleHistory></TempleHistory>
-    <Footer></Footer>
+    <Footer></Footer> */}
     </>
   )
 }
