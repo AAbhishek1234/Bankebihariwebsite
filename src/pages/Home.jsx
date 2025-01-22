@@ -14,8 +14,8 @@ function Home() {
     <About></About>
     <Timming></Timming>
     
-    {/* <TempleHistory></TempleHistory>
-    <Footer></Footer> */}
+    <TempleHistory></TempleHistory>
+    <Footer></Footer>
     </>
   )
 }

@@ -3,13 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TempleHistory = () => {
   return (
-    <div className="container my-4">
+    <div className="container my-4" style={{}}>
       <div
         className="p-4 rounded shadow"
         style={{
           background: 'linear-gradient(135deg, #ffe6cc, #ffcc80)', // Lighter orange gradient
           color: '#663300', // Warm brown color matching the gradient
-          fontWeight:"600"
+          fontWeight:"600",
+        
         }}
       >
         <h2 className="text-center mb-3">श्री बांके बिहारी मंदिर का इतिहास</h2>
