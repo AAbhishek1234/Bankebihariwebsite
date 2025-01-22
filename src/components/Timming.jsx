@@ -100,8 +100,6 @@
 
 
 
-
-
 import React from 'react';
 import { Table, Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -109,7 +107,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Timming = () => {
   return (
     <>
-      <Container className="my-4">
+      {/* First Table */}
+      <Container style={{ marginBottom: '10px' }}>
         <Row>
           <Col>
             <Table striped bordered hover className="shadow" responsive="sm">
@@ -159,7 +158,8 @@ const Timming = () => {
         </Row>
       </Container>
 
-      <Container className="my-4">
+      {/* Second Table */}
+      <Container style={{ marginTop: '-3rem' }}>
         <Row>
           <Col>
             <Table striped bordered hover className="shadow" responsive="sm">
