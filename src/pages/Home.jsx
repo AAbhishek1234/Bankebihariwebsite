@@ -10,11 +10,11 @@ function Home() {
   return (
     <>
     <Navbar></Navbar>
-    <Slider></Slider>
+    {/* <Slider></Slider>
     <About></About>
     <Timming></Timming>
     <TempleHistory></TempleHistory>
-    <Footer></Footer>
+    <Footer></Footer> */}
     </>
   )
 }
