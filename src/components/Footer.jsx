@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Footer = () => {
   return (
-    <footer className="hello" style={{backgroundColor:"white"}}  >
+    <footer className="hello" style={{backgroundColor:"white" ,marginTop:"1rem"}}  >
       <Container >
         <Row style={{backgroundColor:"white"}}>
           <Col md={4}>

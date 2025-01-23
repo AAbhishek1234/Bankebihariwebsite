@@ -1,0 +1,72 @@
+.divv{
+    background-color: #FFB733;
+    border-radius: 15px;
+    width: 70rem;
+    margin-left: 4.5rem !important;
+}
+@media (max-width: 768px){
+    .gallery-container{
+        width: 25rem !important;
+        background-color: #FFB733;
+        border-radius: 15px;
+        margin-left: 1rem !important;
+
+
+    }
+}
+
+
+/* Overall container styling */
+.gallery-container {
+    padding: 1rem;
+    background-color: #FFB733;/* Light gray background for better contrast */
+    border-radius: 15px;
+    width: 70rem;
+    margin-left: 4.5rem;
+  }
+  
+  /* Heading styling */
+  .gallery-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Responsive heading font size */
+  @media (max-width: 768px) {
+    .gallery-heading {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Card image styling */
+  .gallery-img {
+    height: 250px;
+    object-fit: fill !important;
+    border-radius: 8px; /* Rounded corners for a polished look */
+    transition: transform 0.3s ease;
+  }
+  
+ 
+  
+  /* Card title styling */
+  .gallery-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 576px) {
+    .gallery-title {
+      font-size: 1rem;
+    }
+  
+    .gallery-container {
+      padding: 0.5rem;
+    }
+  }
+  

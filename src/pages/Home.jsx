@@ -5,6 +5,7 @@ import About from '../components/Abouts'
 import Timming from '../components/Timming'
 import Footer from '../components/Footer'
 import TempleHistory from '../components/TempleHistory'
+import Gallery from '../components/Gallery'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
     <Timming></Timming>
     
     <TempleHistory></TempleHistory>
+    <Gallery></Gallery>
     <Footer></Footer>
     </>
   )

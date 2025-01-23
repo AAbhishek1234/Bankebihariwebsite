@@ -399,14 +399,7 @@ const MyNavbar = () => {
         </Container>
       </Navbar>
 
-      {/* Main Content */}
-      {/* <div
-        style={{
-          paddingTop: `${imageHeight + navbarHeight}px`, // Push content below fixed images and navbar
-        }}
-      >
-       
-      </div> */}
+   
     </div>
   );
 };
