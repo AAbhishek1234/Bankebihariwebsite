@@ -165,6 +165,8 @@ const About = () => {
         borderRadius: "2rem",
         boxShadow: "0 0 2rem #553700",
         marginTop: "2rem",
+    
+       
       }}
     >
       {/* Title */}

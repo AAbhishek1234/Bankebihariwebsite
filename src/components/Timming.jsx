@@ -108,10 +108,11 @@ const Timming = () => {
   return (
     <>
       {/* First Table */}
-      <Container style={{ marginBottom: '10px' }}>
+
+      <Container style={{ marginBottom: '10px',borderRadius:"15px"}}>
         <Row>
           <Col>
-            <Table striped bordered hover className="shadow" responsive="sm">
+            <Table striped bordered hover className="shadow" responsive="sm" style={{borderRadius:"15px"}}>
               <thead>
                 <tr>
                   <th colSpan="3" className="text-center" style={{ fontWeight: "700", fontSize: "2rem", color: "darkorange" }}>
@@ -201,6 +202,7 @@ const Timming = () => {
           </Col>
         </Row>
       </Container>
+      
     </>
   );
 };
