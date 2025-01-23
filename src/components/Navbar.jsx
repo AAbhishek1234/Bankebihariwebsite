@@ -1,57 +1,279 @@
-// import React from 'react';
+
+
+// import React from "react";
+// import { Navbar, Nav, Container } from "react-bootstrap";
+// import { Link } from "react-scroll";
 // import "./navbar.css";
-// import { Link } from 'react-router-dom';
 
-// const Navbar = () => {
+// const MyNavbar = () => {
+//   const navbarHeight = window.innerWidth < 768 ? 60 : 80;
+
+//   const scrollToTop = () => {
+//     window.scrollTo({ top: 0, behavior: "smooth" });
+//   };
+
 //   return (
-//     <div style={{ position: "relative" }}>
-//       <Link>
-//         <img
-//           src="/images/abovenav.png"
-//           alt="Above Navbar"
-//           className="img-fluid"
-//           style={{ height: "10rem", width: "auto", position: "absolute", top: "-10rem", left: "50%", transform: "translateX(-50%)" }}
-//         />
-//       </Link>
-
-//       <Link>
+//     <div>
+//       <div style={{ position: "relative", height: "8rem" }}>
 //         <img
 //           src="/images/krishna.png"
-//           alt="Krishna"
-//           className="img-fluid"
-//           style={{ height: "8rem", width: "auto", position: "absolute", bottom: "4rem", left: "2rem" }}
+//           alt="Left"
+//           style={{
+//             position: "absolute",
+//             top: "0",
+//             left: "",
+//             height: "8rem",
+//             width: "auto",
+//           }}
 //         />
-//       </Link>
 
-//       <nav className="navbar navbar-expand-lg navbar-light">
-//         <div className="container-fluid" style={{ backgroundColor: "#f28500", boxShadow: "0 0 10px", marginTop: "8rem" }}>
-//           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-//             <span className="navbar-toggler-icon"></span>
-//           </button>
-//           <div className="collapse navbar-collapse" id="navbarNav">
-//             <ul className="navbar-nav mx-auto">
-//               <li className="nav-item">
-//                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
-//               </li>
-//               <li className="nav-item">
-//                 <Link className="nav-link" to="/Blog">Blogs</Link>
-//               </li>
-//               <li className="nav-item">
-//                 <Link className="nav-link" to="/Visit-Temple">Visit Mandir</Link>
-//               </li>
-//               <li className="nav-item">
-//                 <Link className="nav-link" to="/About-Temple">About Mandir</Link>
-//               </li>
+//         <img
+//           src="/images/krishna.png"
+//           alt="Right"
+//           style={{
+//             position: "absolute",
+//             top: "0",
+//             right: "5px",
+//             height: "8rem",
+//             width: "auto",
+//           }}
+//         />
+//       </div>
 
-//             </ul>
-//           </div>
-//         </div>
-//       </nav>
+//       <Navbar
+//         expand="lg"
+//         className="navbar-custom"
+//         style={{
+//           marginTop: "0.00rem",
+//         }}
+//       >
+//         <Container>
+//           <Navbar.Brand
+//             onClick={scrollToTop}
+//             style={{
+//               color: "black",
+//               fontFamily:
+//                 "'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif",
+//               cursor: "pointer",
+//             }}
+//           >
+//             LOGO
+//           </Navbar.Brand>
+//           <Navbar.Toggle
+//             aria-controls="navbar-nav"
+//             className="custom-toggler"
+//           />
+//           <Navbar.Collapse id="navbar-nav">
+//             <Nav className="ms-auto">
+//               <Nav.Link>
+//                 <Link
+//                   to="top"
+//                   smooth={true}
+//                   duration={10}
+//                   offset={-navbarHeight}
+//                   onClick={() =>
+//                     window.scrollTo({ top: 0, behavior: "smooth" })
+//                   }
+//                   className="nav-link-custom"
+//                 >
+//                   Home
+//                 </Link>
+//               </Nav.Link>
+
+//               <Nav.Link>
+//                 <Link
+//                   to="about-us"
+//                   smooth={true}
+//                   duration={10}
+//                   offset={-navbarHeight}
+//                   className="nav-link-custom"
+//                 >
+//                   About Mandir
+//                 </Link>
+//               </Nav.Link>
+
+//               <Nav.Link>
+//                 <Link
+//                   to="Our-Programs"
+//                   smooth={true}
+//                   duration={10}
+//                   offset={-navbarHeight}
+//                   className="nav-link-custom"
+//                 >
+//                   Visit Mandir
+//                 </Link>
+//               </Nav.Link>
+
+//               <Nav.Link>
+//                 <Link
+//                   to="Footer"
+//                   smooth={true}
+//                   duration={10}
+//                   offset={-navbarHeight}
+//                   className="nav-link-custom"
+//                 >
+//                   Blogs
+//                 </Link>
+//               </Nav.Link>
+//             </Nav>
+//           </Navbar.Collapse>
+//         </Container>
+//       </Navbar>
 //     </div>
 //   );
-// }
+// };
 
-// export default Navbar;
+// export default MyNavbar;
+
+
+
+
+
+
+
+// import React from "react";
+// import { Navbar, Nav, Container } from "react-bootstrap";
+// import { Link } from "react-scroll";
+// import "./navbar.css";
+
+// const MyNavbar = () => {
+//   const navbarHeight = window.innerWidth < 768 ? 60 : 80;
+
+//   const scrollToTop = () => {
+//     window.scrollTo({ top: 0, behavior: "smooth" });
+//   };
+
+//   return (
+//     <div>
+//       <div style={{ position: "fixed", top: 0, width: "100%", zIndex: 1020 }}>
+//         <img
+//           src="/images/krishna.png"
+//           alt="Left"
+//           style={{
+//             position: "absolute",
+//             top: "0",
+//             left: "10px",
+//             height: "8rem",
+//             width: "auto",
+//           }}
+//         />
+
+//         <img
+//           src="/images/krishna.png"
+//           alt="Right"
+//           style={{
+//             position: "absolute",
+//             top: "0",
+//             right: "10px",
+//             height: "8rem",
+//             width: "auto",
+//           }}
+//         />
+//       </div>
+
+//       <Navbar
+//         expand="lg"
+//         className="navbar-custom"
+//         style={{
+//           position: "fixed",
+//           top: "8rem", 
+//           width: "100%",
+//           zIndex: 1010,
+//           backgroundColor: "white", 
+//         }}
+//       >
+//         <Container>
+//           <Navbar.Brand
+//             onClick={scrollToTop}
+//             style={{
+//               color: "black",
+//               fontFamily:
+//                 "'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif",
+//               cursor: "pointer",
+//             }}
+//           >
+//             LOGO
+//           </Navbar.Brand>
+//           <Navbar.Toggle
+//             aria-controls="navbar-nav"
+//             className="custom-toggler"
+//           />
+//           <Navbar.Collapse id="navbar-nav">
+//             <Nav className="ms-auto">
+//               <Nav.Link>
+//                 <Link
+//                   to="top"
+//                   smooth={true}
+//                   duration={10}
+//                   offset={-navbarHeight}
+//                   onClick={() =>
+//                     window.scrollTo({ top: 0, behavior: "smooth" })
+//                   }
+//                   className="nav-link-custom"
+//                 >
+//                   Home
+//                 </Link>
+//               </Nav.Link>
+
+//               <Nav.Link>
+//                 <Link
+//                   to="about-us"
+//                   smooth={true}
+//                   duration={10}
+//                   offset={-navbarHeight}
+//                   className="nav-link-custom"
+//                 >
+//                   About Mandir
+//                 </Link>
+//               </Nav.Link>
+
+//               <Nav.Link>
+//                 <Link
+//                   to="Our-Programs"
+//                   smooth={true}
+//                   duration={10}
+//                   offset={-navbarHeight}
+//                   className="nav-link-custom"
+//                 >
+//                   Visit Mandir
+//                 </Link>
+//               </Nav.Link>
+
+
+//               <Nav.Link>
+//                 <Link
+//                   to="Footer"
+//                   smooth={true}
+//                   duration={10}
+//                   offset={-navbarHeight}
+//                   className="nav-link-custom"
+//                 >
+//                   Blogs
+//                 </Link>
+//               </Nav.Link>
+//             </Nav>
+//           </Navbar.Collapse>
+//         </Container>
+//       </Navbar>
+//     </div>
+//   );
+// };
+
+// export default MyNavbar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -61,56 +283,67 @@ import { Link } from "react-scroll";
 import "./navbar.css";
 
 const MyNavbar = () => {
-  const navbarHeight = window.innerWidth < 768 ? 60 : 80;
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  const navbarHeight = 80; // Height of the navbar
+  const imageHeight = 110; // Height of the top images (adjust based on your design)
 
   return (
     <div>
-      {/* Images Section */}
-      <div style={{ position: "relative", height: "8rem" }}>
-        {/* Left-side image */}
+      {/* Fixed Images Section */}
+      <div
+        style={{
+          position: "fixed",
+          top: 0,
+          width: "100%",
+          height: `${imageHeight}px`, // Set height for the image container
+          zIndex: 1020,
+          backgroundImage: "url('/images/web-background.jpg')",
+          backgroundSize: "cover"
+        }}
+      >
+        {/* Left-side Image */}
         <img
           src="/images/krishna.png"
           alt="Left"
           style={{
             position: "absolute",
-            top: "0",
-            left: "",
-            height: "8rem",
+            top: "0rem",
+            left: "10px",
+            height: `${imageHeight}px`, // Adjust height within the container
             width: "auto",
           }}
         />
 
-        {/* Right-side image */}
+        {/* Right-side Image */}
         <img
           src="/images/krishna.png"
           alt="Right"
           style={{
             position: "absolute",
-            top: "0",
-            right: "5px",
-            height: "8rem",
+            top: "0rem",
+            right: "10px",
+            height: `${imageHeight}px`,
             width: "auto",
           }}
         />
       </div>
 
-      {/* Navbar Section */}
+      {/* Fixed Navbar Section */}
       <Navbar
         expand="lg"
         className="navbar-custom"
         style={{
-          marginTop: "0.00rem", // Push navbar below the images
+          position: "fixed",
+          top: `${imageHeight}px`, // Navbar starts right after images
+          width: "100%",
+          zIndex: 1010,
+          backgroundColor: "#f39c12",
+        
         }}
       >
         <Container>
           <Navbar.Brand
-            onClick={scrollToTop}
             style={{
-              color: "black",
+              color: "white",
               fontFamily:
                 "'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif",
               cursor: "pointer",
@@ -118,61 +351,44 @@ const MyNavbar = () => {
           >
             LOGO
           </Navbar.Brand>
-          <Navbar.Toggle
-            aria-controls="navbar-nav"
-            className="custom-toggler"
-          />
+          <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
             <Nav className="ms-auto">
-              {/* Home Link */}
               <Nav.Link>
                 <Link
                   to="top"
                   smooth={true}
                   duration={10}
-                  offset={-navbarHeight}
-                  onClick={() =>
-                    window.scrollTo({ top: 0, behavior: "smooth" })
-                  }
                   className="nav-link-custom"
                 >
                   Home
                 </Link>
               </Nav.Link>
-
-              {/* About Us Link */}
               <Nav.Link>
                 <Link
                   to="about-us"
                   smooth={true}
                   duration={10}
-                  offset={-navbarHeight}
                   className="nav-link-custom"
                 >
                   About Mandir
                 </Link>
               </Nav.Link>
-
-              {/* Services Link */}
               <Nav.Link>
                 <Link
                   to="Our-Programs"
                   smooth={true}
                   duration={10}
-                  offset={-navbarHeight}
                   className="nav-link-custom"
                 >
                   Visit Mandir
                 </Link>
               </Nav.Link>
-
-              {/* Contact Us Link */}
               <Nav.Link>
                 <Link
                   to="Footer"
                   smooth={true}
                   duration={10}
-                  offset={-navbarHeight}
                   className="nav-link-custom"
                 >
                   Blogs
@@ -182,6 +398,15 @@ const MyNavbar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      {/* Main Content */}
+      {/* <div
+        style={{
+          paddingTop: `${imageHeight + navbarHeight}px`, // Push content below fixed images and navbar
+        }}
+      >
+       
+      </div> */}
     </div>
   );
 };

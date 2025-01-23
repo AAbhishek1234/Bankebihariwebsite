@@ -3,7 +3,7 @@ import { Carousel } from 'react-bootstrap';
 import './slider.css'
 function Slider() {
   return (
-    <Carousel>
+    <Carousel style={{marginTop:"10.6rem"}}>
       <Carousel.Item>
         <img
           className="d-blockx w-100"
