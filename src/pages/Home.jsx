@@ -14,8 +14,8 @@ function Home() {
     <Slider></Slider>
     <About></About>
     <Timming></Timming>
-    
-    <TempleHistory></TempleHistory>
+{/*     
+    <TempleHistory></TempleHistory> */}
     <Gallery></Gallery>
     <Footer></Footer>
     </>

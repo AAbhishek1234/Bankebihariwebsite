@@ -275,11 +275,9 @@
 
 
 
-
-
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom"; // Use NavLink for active link styles
 import "./navbar.css";
 
 const MyNavbar = () => {
@@ -297,7 +295,7 @@ const MyNavbar = () => {
           height: `${imageHeight}px`, // Set height for the image container
           zIndex: 1020,
           backgroundImage: "url('/images/web-background.jpg')",
-          backgroundSize: "cover"
+          backgroundSize: "cover",
         }}
       >
         {/* Left-side Image */}
@@ -337,7 +335,6 @@ const MyNavbar = () => {
           width: "100%",
           zIndex: 1010,
           backgroundColor: "#f39c12",
-        
         }}
       >
         <Container>
@@ -354,52 +351,22 @@ const MyNavbar = () => {
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link>
-                <Link
-                  to="top"
-                  smooth={true}
-                  duration={10}
-                  className="nav-link-custom"
-                >
-                  Home
-                </Link>
+              <Nav.Link as={NavLink} to="/" className="nav-link-custom">
+                Home
               </Nav.Link>
-              <Nav.Link>
-                <Link
-                  to="about-us"
-                  smooth={true}
-                  duration={10}
-                  className="nav-link-custom"
-                >
-                  About Mandir
-                </Link>
+              <Nav.Link as={NavLink} to="/about" className="nav-link-custom">
+                About Mandir
               </Nav.Link>
-              <Nav.Link>
-                <Link
-                  to="Our-Programs"
-                  smooth={true}
-                  duration={10}
-                  className="nav-link-custom"
-                >
-                  Visit Mandir
-                </Link>
+              <Nav.Link as={NavLink} to="/visit-mandir" className="nav-link-custom">
+                Visit Mandir
               </Nav.Link>
-              <Nav.Link>
-                <Link
-                  to="Footer"
-                  smooth={true}
-                  duration={10}
-                  className="nav-link-custom"
-                >
-                  Blogs
-                </Link>
+              <Nav.Link as={NavLink} to="/blogs" className="nav-link-custom">
+                Blogs
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-   
     </div>
   );
 };

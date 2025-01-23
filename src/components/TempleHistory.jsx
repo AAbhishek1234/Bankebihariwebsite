@@ -1,15 +1,19 @@
 import React from 'react';
+import Navbar from '../components/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './templehistory.css'
 const TempleHistory = () => {
   return (
-    <div className="container my-4" style={{}}>
+    <>
+    <Navbar/>
+    <div className="container my-4" >
       <div
         className="p-4 rounded shadow"
         style={{
           background: 'linear-gradient(135deg, #ffe6cc, #ffcc80)', // Lighter orange gradient
           color: '#663300', // Warm brown color matching the gradient
           fontWeight:"600",
+          marginTop:"9rem"
         
         }}
       >
@@ -34,6 +38,7 @@ const TempleHistory = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 
