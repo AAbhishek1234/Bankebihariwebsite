@@ -1,28 +1,14 @@
-.divv{
-    background-color: #FFB733;
-    border-radius: 15px;
-    width: 70rem;
-    margin-left: 4.5rem !important;
-}
-@media (max-width: 768px){
-    .gallery-container{
-        width: 25rem !important;
-        background-color: #FFB733;
-        border-radius: 15px;
-        margin-left: 1rem !important;
 
-
-    }
-}
 
 
 /* Overall container styling */
 .gallery-container {
     padding: 1rem;
-    background-color: #FFB733;/* Light gray background for better contrast */
+    background-color: #FFB733;
     border-radius: 15px;
-    width: 70rem;
-    margin-left: 4.5rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    /* Light gray background for better contrast */
   }
   
   /* Heading styling */
@@ -49,14 +35,13 @@
     border-radius: 8px; /* Rounded corners for a polished look */
     transition: transform 0.3s ease;
   }
-  
- 
+
   
   /* Card title styling */
   .gallery-title {
     font-size: 1.2rem;
     font-weight: 500;
-    color: #555;
+    color: black !important;
   }
   
   /* Adjustments for smaller screens */
