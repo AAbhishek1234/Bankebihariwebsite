@@ -18,5 +18,6 @@
         .d-blockx {
           width: 100%;
           height: 29rem !important;
+          margin-top: 1.5rem;
         }
       }
