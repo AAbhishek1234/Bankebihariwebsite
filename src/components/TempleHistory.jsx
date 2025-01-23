@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './templehistory.css'
+import Gallery from '../components/Gallery';
 const TempleHistory = () => {
   return (
     <>
@@ -39,6 +40,7 @@ const TempleHistory = () => {
         </p>
       </div>
     </div>
+    <Gallery></Gallery>
     <Footer></Footer>
     </>
   );

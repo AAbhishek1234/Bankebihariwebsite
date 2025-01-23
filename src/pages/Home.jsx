@@ -6,7 +6,7 @@ import Timming from '../components/Timming'
 import Footer from '../components/Footer'
 import TempleHistory from '../components/TempleHistory'
 import Gallery from '../components/Gallery'
-
+import Welcome from '../components/Welcome'
 function Home() {
   return (
     <>
@@ -16,7 +16,8 @@ function Home() {
     <Timming></Timming>
 {/*     
     <TempleHistory></TempleHistory> */}
-    <Gallery></Gallery>
+    <Welcome></Welcome>
+    {/* <Gallery></Gallery> */}
     <Footer></Footer>
     </>
   )
