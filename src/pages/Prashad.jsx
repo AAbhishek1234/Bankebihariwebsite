@@ -63,7 +63,7 @@ const PrashadGrid = () => {
                   {product.title}
                 </Card.Title>
                 <Card.Text className="prashad-card-description text-center">
-                  {product.description}
+                  {/* {product.description} */}
                 </Card.Text>
                 <div className="d-flex justify-content-center">
                   <Button
