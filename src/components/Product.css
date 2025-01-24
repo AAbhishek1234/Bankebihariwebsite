@@ -50,7 +50,7 @@
   
   @media (max-width: 768px) {
      .product-card-img{
-      height: 12rem;
+      height: 16rem;
       object-fit: fill !important;
     }
   }
