@@ -18,7 +18,7 @@ const Mala = () => {
       link: "/buy/prashad",
     },
     {
-      title: "Rudraksha Mala",
+      title: "RudrakshaMala",
       description: "A short description of Prashad.",
       image: "/images/Rudraksha Mala.jpg",
       link: "/buy/prashad",
