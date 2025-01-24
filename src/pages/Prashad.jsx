@@ -12,7 +12,7 @@ const PrashadGrid = () => {
       link: "https://www.youtube.com/",
     },
     {
-      title: "MakhanMishri",
+      title: "Makhan Mishri",
       description: "A short description of Prashad.",
       image: "/images/makhanmishri.jpg",
       link: "/buy/prashad",
