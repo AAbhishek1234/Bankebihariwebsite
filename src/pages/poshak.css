@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    .pq-5{
+        margin-top: 11rem !important;
+    }
+    .poshak-card-img{
+        height: 8rem !important;
+    }
+    .poshak-card-body{
+        height: 5rem !important;
+    }
+   .poshak-card-title{
+    margin-top: -0.5rem;
+    font-size:1.1rem !important ;
+   }
+   .poshak-card-button{
+     margin-top: -0.5rem !important;
+   }
+    }

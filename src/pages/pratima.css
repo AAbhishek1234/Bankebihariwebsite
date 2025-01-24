@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    .pq-5{
+        margin-top: 11rem !important;
+    }
+    .pratima-card-img{
+        height: 8rem !important;
+    }
+    .pratima-card-body{
+        height: 5rem !important;
+    }
+   .pratima-card-title{
+    margin-top: -0.5rem;
+    font-size:1.1rem !important ;
+   }
+   .pratima-card-button{
+     margin-top: -0.5rem !important;
+   }
+    }
