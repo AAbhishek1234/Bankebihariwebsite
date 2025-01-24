@@ -1,0 +1,55 @@
+/* Styling for the product grid container */
+
+  
+  /* Link styling for the entire card */
+  .product-card-link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .product-card-link:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Card styling */
+  .product-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card image styling */
+  .product-card-img {
+    height: 220px;
+    object-fit: fill;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Card title styling */
+  .product-card-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  /* Card description styling */
+  .product-card-description {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+    min-height: 60px;
+  }
+  
+  @media (max-width: 768px) {
+     .product-card-img{
+      height: 18rem;
+    }
+  }

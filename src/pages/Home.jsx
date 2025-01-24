@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import TempleHistory from '../components/TempleHistory'
 import Gallery from '../components/Gallery'
 import Welcome from '../components/Welcome'
+import Products from '../components/Products'
 function Home() {
   return (
     <>
@@ -18,6 +19,7 @@ function Home() {
     <TempleHistory></TempleHistory> */}
     <Welcome></Welcome>
     {/* <Gallery></Gallery> */}
+    <Products></Products>
     <Footer></Footer>
     </>
   )
