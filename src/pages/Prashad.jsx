@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Navbar from '../components/Navbar'
+import './prashad.css'
 const PrashadGrid = () => {
   // Sample product data
   const products = [
@@ -39,7 +40,7 @@ const PrashadGrid = () => {
   return (
     <>
     <Navbar></Navbar>
-    <Container className="py-5 prashad-grid" style={{marginTop:"8rem"}}>
+    <Container className="pq-5 prashad-grid" style={{marginTop:"9rem"}}>
       <h2 className="text-center mb-4 prashad-grid-title"></h2>
       <Row className="g-4 prashad-grid-row">
         {products.map((product, index) => (
