@@ -116,7 +116,7 @@ const Timming = () => {
               <thead>
                 <tr>
                   <th colSpan="3" className="text-center" style={{ fontWeight: "700", fontSize: "2rem", color: "darkorange" }}>
-                    Shree Banke Bihari Mandir's Timmings
+                    Shree Banke Bihari Mandir's Darshan Timmings
                   </th>
                 </tr>
               </thead>

@@ -19,7 +19,7 @@ const ProductGrid = () => {
       link: "/product/mala",
     },
     {
-      title: "Poshak",
+      title: "Bihari ji's Poshak",
       description: "This is a short description of Product 3.",
       image: "/images/vastra.jpg",
       link: "/product/poshak",
@@ -31,16 +31,29 @@ const ProductGrid = () => {
       link: "/product/pratima",
     },
     {
-      title: "Painting",
+      title: "Paintings",
       description: "This is a short description of Product 5.",
       image: "/images/painting.webp",
       link: "/product/painting",
     },
+    {
+        title: " Dresses",
+        description: "This is a short description of Product 6.",
+        image: "/images/gopidress.webp",
+        link: "/product/painting",
+      },
+      {
+        title: "Chandan Itar ",
+        description: "This is a short description of Product 6.",
+        image: "/images/allattribute.webp",
+        link: "/product/painting",
+      },
   ];
 
   return (
-    <Container className="product-grid py-5">
-      <h2 className="text-center mb-4">Our Products</h2>
+    <div className="products"style={{ backgroundColor: "#FFB733",borderRadius:"15px",marginLeft:"1rem",marginRight:"1rem" }}>
+    <Container className="product-grid py-5" style={{marginTop:"2rem"}}>
+      <h2 className="text-center mb-4" style={{color:"black",fontWeight:"bold",fontSize:"2.5rem"}}>Selct By Category</h2>
       <Row className="g-4">
         {products.map((product, index) => (
           <Col xs={12} sm={6} md={4} lg={3} key={index}>
@@ -66,6 +79,7 @@ const ProductGrid = () => {
         ))}
       </Row>
     </Container>
+    </div>
   );
 };
 

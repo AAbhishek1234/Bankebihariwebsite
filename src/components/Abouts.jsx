@@ -176,7 +176,7 @@ const About = () => {
             className="display-4 mb-4"
             style={{ fontWeight: "700", fontSize: "40px" }}
           >
-            Glimpses of Major Festivals in Shree Banke Bihari Mandir
+            Major Festivals in Shree Banke Bihari Mandir
           </h1>
         </Col>
       </Row>
