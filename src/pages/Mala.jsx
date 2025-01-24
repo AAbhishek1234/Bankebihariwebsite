@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Navbar from '../components/Navbar'
 import './mala.css'
+import Footer from "../components/Footer";
 const Mala = () => {
   // Sample product data
   const products = [
@@ -81,6 +82,7 @@ const Mala = () => {
         ))}
       </Row>
     </Container>
+    <Footer></Footer>
     </>
   );
 };

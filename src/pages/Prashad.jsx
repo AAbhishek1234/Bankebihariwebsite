@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Navbar from '../components/Navbar'
 import './prashad.css'
+import Footer from "../components/Footer";
 const PrashadGrid = () => {
   // Sample product data
   const products = [
@@ -98,6 +99,7 @@ const PrashadGrid = () => {
         ))}
       </Row>
     </Container>
+    <Footer></Footer>
     </>
   );
 };
