@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    .pq-5{
+        margin-top: 11rem !important;
+    }
+    .dress-card-img{
+        height: 8rem !important;
+    }
+    .dress-card-body{
+        height: 5rem !important;
+    }
+   .dress-card-title{
+    margin-top: -0.5rem;
+    font-size:1.1rem !important ;
+   }
+   .dress-card-button{
+     margin-top: -0.5rem !important;
+   }
+    }

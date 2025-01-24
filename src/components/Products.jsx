@@ -40,7 +40,7 @@ const ProductGrid = () => {
         title: " Dresses",
         description: "This is a short description of Product 6.",
         image: "/images/gopidress.webp",
-        link: "/product/painting",
+        link: "/product/dress",
       },
       {
         title: "Chandan Itar ",

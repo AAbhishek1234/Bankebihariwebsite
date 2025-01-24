@@ -8,6 +8,7 @@ import Mala from './pages/Mala'
 import Poshak from './pages/Poshak'
 import Pratima from './pages/Pratima'
 import Painting from './pages/Painting'
+import Dress from './pages/Dress'
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
         <Route path='/product/poshak' element={<Poshak/>}/>
         <Route path='/product/pratima' element={<Pratima/>}/>
         <Route path='/product/painting' element={<Painting/>}/>
+        <Route path='/product/dress' element={<Dress/>}/>
       </Routes>
     </Router>
     </>
