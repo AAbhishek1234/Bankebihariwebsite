@@ -3,13 +3,14 @@
         margin-top: 11rem !important;
     }
     .prashad-card-img{
-        height: 10rem !important;
+        height: 8rem !important;
     }
     .prashad-card-body{
         height: 8rem !important;
     }
    .prashad-card-title{
     margin-top: -0.5rem;
+    font-size:1rem !important ;
    }
    .prashad-card-button{
      margin-top: -0.5rem !important;
