@@ -8,43 +8,43 @@ const ProductGrid = () => {
   const products = [
     {
       title: "Prashad",
-      description: "This is a short description of Product 1.",
+      description: "Sacred offerings prepared with devotion.",
       image: "/images/peda2.jpg",
       link: "/product/prashad",
     },
     {
       title: "Mala",
-      description: "This is a short description of Product 2.",
+      description: "Holy beads for prayer and meditation.",
       image: "/images/tulsimala.jpg",
       link: "/product/mala",
     },
     {
       title: "Bihari ji's Poshak",
-      description: "This is a short description of Product 3.",
+      description: "Elegant attires for Lord Krishna.",
       image: "/images/vastra.jpg",
       link: "/product/poshak",
     },
     {
       title: "Pratima",
-      description: "This is a short description of Product 4.",
+      description: "Divine idols for your home temple.",
       image: "/images/murti.jpg",
       link: "/product/pratima",
     },
     {
       title: "Paintings",
-      description: "This is a short description of Product 5.",
+      description: "Spiritual artwork for inspiration.",
       image: "/images/painting.webp",
       link: "/product/painting",
     },
     {
         title: " Dresses",
-        description: "This is a short description of Product 6.",
+        description: "Traditional outfits for devotion.",
         image: "/images/gopidress.webp",
         link: "/product/dress",
       },
       {
         title: "Chandan Itar ",
-        description: "This is a short description of Product 6.",
+        description: "Fragrant perfumes for rituals.",
         image: "/images/allattribute.webp",
         link: "/product/allequipment",
       },
@@ -69,7 +69,7 @@ const ProductGrid = () => {
                   <Card.Title className="product-card-title">
                     {product.title}
                   </Card.Title>
-                  <Card.Text className="product-card-description">
+                  <Card.Text className="product-card-description" style={{color:"black"}}>
                     {product.description}
                   </Card.Text>
                 </Card.Body>

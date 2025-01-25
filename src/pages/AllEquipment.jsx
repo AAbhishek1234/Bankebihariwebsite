@@ -13,60 +13,60 @@ const AllEquipment = () => {
   const products = [
     {
       title: "Chandan",
-      description: "A short description of Prashad.",
+      description: "",
       image: "/images/chandan.jpg",
     },
     {
       title: "DhoopBatti",
-      description: "A short description of Prashad.",
+      description: "",
       image: "/images/dhoopbatti.jpg",
     
     },
     {
       title: "AgarBatti",
-      description: "A short description of Prashad.",
+      description: "",
       image: "/images/agarbatti.jpg",
     
     },
     {
       title: "Sankh",
-      description: "A short description of Prashad.",
+      description: "",
       image: "/images/sankh.jpg",
     
     },
     {
       title: "Locket",
-      description: "A short description of Prashad.",
+      description: "",
       image: "/images/locket.jpg",
     
     },
     {
       title: "Kangan",
-      description: "A short description of Prashad.",
+      description: "",
       image: "/images/kangan.jpg",
     
     },
     {
       title: "Haridas ji",
-      description: "A short description of Prashad.",
+      description: "",
       image: "/images/haridaslocket.webp",
     
     },
     {
       title: "Combo",
-      description: "A short description of Prashad.",
+      description: "",
       image: "/images/allloket.webp",
     
     },
     {
         title: "Bracelet",
-        description: "A short description of Prashad.",
+        description: "",
         image: "/images/bracelet.jpg",
       
       },
       {
         title: "Tulsi Mala",
-        description: "A short description of Prashad.",
+        description: "",
         image: "/images/tulsimala.jpg",
       
       },
