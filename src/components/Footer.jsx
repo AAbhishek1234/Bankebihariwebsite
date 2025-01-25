@@ -17,9 +17,9 @@ const Footer = () => {
           <Col md={4} style={{backgroundColor:"white"}}>
             <h5>Links</h5>
             <ul className="list-unstyled li ">
-              <li><a href="#" className="text-light">Home</a></li>
-              <li><a href="#" className="text-light">Services</a></li>
-              <li><a href="#" className="text-light">Contact</a></li>
+              <li><a href="/" className="text-light">Home</a></li>
+              <li><a href="/about" className="text-light">About Mandir</a></li>
+              <li><a href="/about" className="text-light">Gallery</a></li>
               <li><a href="#" className="text-light">Privacy Policy</a></li>
             </ul>
           </Col>
