@@ -70,6 +70,12 @@ const AllEquipment = () => {
         image: "/images/tulsimala.jpg",
       
       },
+      {
+        title: "Itra",
+        description: "",
+        image: "/images/itraedit.jpg",
+      
+      },
   ];
   const handleBuyNow = (product) => {
     const phoneNumber = "9717024896"; 

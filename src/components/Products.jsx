@@ -43,7 +43,7 @@ const ProductGrid = () => {
         link: "/product/dress",
       },
       {
-        title: "Chandan Itar ",
+        title: "Daily Uses",
         description: "Fragrant perfumes for rituals.",
         image: "/images/allattribute.webp",
         link: "/product/allequipment",
