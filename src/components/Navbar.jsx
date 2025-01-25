@@ -273,16 +273,27 @@
 
 
 
-
-
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { NavLink } from "react-router-dom"; // Use NavLink for active link styles
+import { NavLink, useNavigate } from "react-router-dom"; // Use useNavigate for programmatic navigation
 import "./navbar.css";
 
 const MyNavbar = () => {
   const navbarHeight = 80; // Height of the navbar
   const imageHeight = 110; // Height of the top images (adjust based on your design)
+  const navigate = useNavigate(); // React Router's navigation hook
+
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scrolling effect
+    });
+  };
+
+  const handleLogoClick = () => {
+    handleScrollToTop(); // Scroll to the top
+    navigate("/"); // Navigate to the home route
+  };
 
   return (
     <div>
@@ -339,6 +350,7 @@ const MyNavbar = () => {
       >
         <Container>
           <Navbar.Brand
+            onClick={handleLogoClick} // Handle scroll and navigation when the logo is clicked
             style={{
               color: "white",
               fontFamily:
@@ -351,16 +363,36 @@ const MyNavbar = () => {
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link as={NavLink} to="/" className="nav-link-custom">
+              <Nav.Link
+                as={NavLink}
+                to="/"
+                className="nav-link-custom"
+                onClick={handleScrollToTop}
+              >
                 Home
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/about" className="nav-link-custom">
+              <Nav.Link
+                as={NavLink}
+                to="/about"
+                className="nav-link-custom"
+                onClick={handleScrollToTop}
+              >
                 About Mandir
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/visit-mandir" className="nav-link-custom">
+              <Nav.Link
+                as={NavLink}
+                to="/visit-mandir"
+                className="nav-link-custom"
+                onClick={handleScrollToTop}
+              >
                 Visit Mandir
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/blogs" className="nav-link-custom">
+              <Nav.Link
+                as={NavLink}
+                to="/blogs"
+                className="nav-link-custom"
+                onClick={handleScrollToTop}
+              >
                 Blogs
               </Nav.Link>
             </Nav>
