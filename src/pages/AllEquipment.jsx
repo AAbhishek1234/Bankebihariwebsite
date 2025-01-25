@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Navbar from '../components/Navbar'
-import './allequipment.css'
+ import './allequipment.css'
 import Footer from "../components/Footer";
 const AllEquipment = () => {
   // Sample product data
