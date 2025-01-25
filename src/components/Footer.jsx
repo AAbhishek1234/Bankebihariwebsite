@@ -11,7 +11,7 @@ const Footer = () => {
           <Col md={4}>
             <h5>About Us</h5>
             <p>
-              We provide high-quality web solutions and services. Our focus is on simplicity and customer satisfaction.
+            We are dedicated to providing sacred items and divine essentials for your spiritual journey. From Prashad to holy idols, every product is crafted with devotion to bring peace and blessings into your life.
             </p>
           </Col>
           <Col md={4} style={{backgroundColor:"white"}}>
