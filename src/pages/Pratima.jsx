@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Navbar from '../components/Navbar'
-import './prashad.css'
+import './pratima.css'
 import Footer from "../components/Footer";
 const Pratima = () => {
   // Sample product data
