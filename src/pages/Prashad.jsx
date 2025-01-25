@@ -228,9 +228,9 @@ const PrashadGrid = () => {
                     <Card.Title className="prashad-card-title text-center">
                       {product.title}
                     </Card.Title>
-                    <Card.Text className="prashad-card-description text-center">
+                    {/* <Card.Text className="prashad-card-description text-center">
                       {product.description}
-                    </Card.Text>
+                    </Card.Text> */}
                     <div className="d-flex justify-content-center">
                       <Button
                         onClick={() => handleBuyNow(product)}
