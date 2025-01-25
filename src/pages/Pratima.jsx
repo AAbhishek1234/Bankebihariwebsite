@@ -13,35 +13,39 @@ const Pratima = () => {
       title: "Pratima",
       description: "A short description of Prashad.",
       image: "/images/p1.jpg",
-      link: "https://www.youtube.com/",
     },
     {
       title: "Pratima",
       description: "A short description of Prashad.",
-      image: "/images/pratima2.webp",
-      link: "/buy/prashad",
+      image: "/images/pratima2.webp"
+  
     },
     {
       title: "Pratima",
       description: "A short description of Prashad.",
       image: "/images/pratima3.webp",
-      link: "/buy/prashad",
+  
     },
     {
       title: "Pratima",
       description: "A short description of Prashad.",
-      image: "/images/pratima4.jpg",
-      link: "/buy/prashad",
+      image: "/images/pratima4.jpg"
+  
     },
     {
       title: "Pratima",
       description: "A short description of Prashad.",
       image: "/images/pratima5.jpeg",
-      link: "/buy/prashad",
+  
     },
     
   ];
-
+  const handleBuyNow = (product) => {
+    const phoneNumber = "9717024896"; 
+    const message = `Hello, I am interested in buying "${product.title}". Could you please provide more details?\nHere is the product image: ${window.location.origin}${product.image}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  };
   return (
     <>
     <Navbar></Navbar>
@@ -73,7 +77,7 @@ const Pratima = () => {
                 </Card.Text>
                 <div className="d-flex justify-content-center">
                   <Button
-                    href={product.link}
+                onClick={() => handleBuyNow(product)}
                     variant="primary"
                     className="pratima-card-button" style={{backgroundColor:"#f28500",border:"none"}}
                   >

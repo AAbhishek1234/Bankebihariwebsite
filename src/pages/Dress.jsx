@@ -16,52 +16,57 @@ const Dress = () => {
       title: "Gopi Dress",
       description: "A short description of Prashad.",
       image: "/images/d2.webp",
-      link: "https://www.youtube.com/",
+      
     },
     {
       title: "Pataka",
       description: "A short description of Prashad.",
       image: "/images/d8.jpg",
-      link: "/buy/prashad",
+     
     },
     {
       title: "Kurtas",
       description: "A short description of Prashad.",
       image: "/images/d5kurta.jpeg",
-      link: "/buy/prashad",
+     
     },
     {
       title: "T-Shirt",
       description: "A short description of Prashad.",
       image: "/images/d4t-shirt.jpg",
-      link: "/buy/prashad",
+     
     },
     {
       title: "Shirt",
       description: "A short description of Prashad.",
       image: "/images/d3shirt.jpeg",
-      link: "/buy/prashad",
+     
     },
     {
       title: "Kurta Dhoti",
       description: "A short description of Prashad.",
       image: "/images/kurtdhoti.webp",
-      link: "/buy/prashad",
+  
     },
     {
       title: "Khichadi",
       description: "A short description of Prashad.",
       image: "/images/d7.jpg",
-      link: "/buy/prashad",
+  
     },
     {
       title: "Combo",
       description: "A short description of Prashad.",
       image: "/images/d6.jpg",
-      link: "/buy/prashad",
+     
     },
   ];
-
+  const handleBuyNow = (product) => {
+    const phoneNumber = "9717024896"; 
+    const message = `Hello, I am interested in buying "${product.title}". Could you please provide more details?\nHere is the product image: ${window.location.origin}${product.image}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  };
   return (
     <>
     <Navbar></Navbar>
@@ -93,7 +98,7 @@ const Dress = () => {
                 </Card.Text>
                 <div className="d-flex justify-content-center">
                   <Button
-                    href={product.link}
+                  onClick={() => handleBuyNow(product)}
                     variant="primary"
                     className="dress-card-button" style={{backgroundColor:"#f28500",border:"none"}}
                   >

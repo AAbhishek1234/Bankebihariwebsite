@@ -15,64 +15,68 @@ const AllEquipment = () => {
       title: "Chandan",
       description: "A short description of Prashad.",
       image: "/images/chandan.jpg",
-      link: "https://www.youtube.com/",
     },
     {
       title: "DhoopBatti",
       description: "A short description of Prashad.",
       image: "/images/dhoopbatti.jpg",
-      link: "/buy/prashad",
+    
     },
     {
       title: "AgarBatti",
       description: "A short description of Prashad.",
       image: "/images/agarbatti.jpg",
-      link: "/buy/prashad",
+    
     },
     {
       title: "Sankh",
       description: "A short description of Prashad.",
       image: "/images/sankh.jpg",
-      link: "/buy/prashad",
+    
     },
     {
       title: "Locket",
       description: "A short description of Prashad.",
       image: "/images/locket.jpg",
-      link: "/buy/prashad",
+    
     },
     {
       title: "Kangan",
       description: "A short description of Prashad.",
       image: "/images/kangan.jpg",
-      link: "/buy/prashad",
+    
     },
     {
       title: "Haridas ji",
       description: "A short description of Prashad.",
       image: "/images/haridaslocket.webp",
-      link: "/buy/prashad",
+    
     },
     {
       title: "Combo",
       description: "A short description of Prashad.",
       image: "/images/allloket.webp",
-      link: "/buy/prashad",
+    
     },
     {
         title: "Bracelet",
         description: "A short description of Prashad.",
         image: "/images/bracelet.jpg",
-        link: "/buy/prashad",
+      
       },
       {
         title: "Tulsi Mala",
         description: "A short description of Prashad.",
         image: "/images/tulsimala.jpg",
-        link: "/buy/prashad",
+      
       },
   ];
-
+  const handleBuyNow = (product) => {
+    const phoneNumber = "9717024896"; 
+    const message = `Hello, I am interested in buying "${product.title}". Could you please provide more details?\nHere is the product image: ${window.location.origin}${product.image}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  };
   return (
     <>
     <Navbar></Navbar>
@@ -104,7 +108,7 @@ const AllEquipment = () => {
                 </Card.Text>
                 <div className="d-flex justify-content-center">
                   <Button
-                    href={product.link}
+              onClick={() => handleBuyNow(product)}
                     variant="primary"
                     className="equipmet-card-button" style={{backgroundColor:"#f28500",border:"none"}}
                   >

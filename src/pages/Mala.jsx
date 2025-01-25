@@ -20,29 +20,30 @@ const Mala = () => {
       title: "Phool Mala",
       description: "A short description of Prashad.",
       image: "/images/phl.jpg",
-      link: "/buy/prashad",
     },
     {
       title: "RudrakshMala",
       description: "A short description of Prashad.",
       image: "/images/Rudraksha Mala.jpg",
-      link: "/buy/prashad",
     },
     {
       title: "Bodhi Mala",
       description: "A short description of Prashad.",
       image: "/images/bm.jpg",
-      link: "/buy/prashad",
     },
     {
       title: "TulsiLeaf Mala",
       description: "A short description of Prashad.",
       image: "/images/tulsig.jpg",
-      link: "/buy/prashad",
     },
    
   ];
-
+  const handleBuyNow = (product) => {
+    const phoneNumber = "9717024896"; 
+    const message = `Hello, I am interested in buying "${product.title}". Could you please provide more details?\nHere is the product image: ${window.location.origin}${product.image}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  };
   return (
     <>
     <Navbar></Navbar>
@@ -74,7 +75,7 @@ const Mala = () => {
                 </Card.Text>
                 <div className="d-flex justify-content-center">
                   <Button
-                    href={product.link}
+                  onClick={() => handleBuyNow(product)}
                     variant="primary"
                     className="mala-card-button" style={{backgroundColor:"#f28500",border:"none"}}
                   >
