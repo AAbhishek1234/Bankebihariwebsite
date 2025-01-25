@@ -36,7 +36,7 @@ const Footer = () => {
         <hr className="bg-light"/>
         <Row >
           <Col className="text-center" >
-            <p>&copy; {new Date().getFullYear()} shreebankebiharijimandir. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} shreebankebiharijimandir. All Rights Reserved.</p>
           </Col>
         </Row>
       </Container>
