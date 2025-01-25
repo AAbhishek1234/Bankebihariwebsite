@@ -10,25 +10,25 @@ const Poshak = () => {
   // Sample product data
   const products = [
     {
-      title: "Green Poshak",
+      title: "Green ",
       description: "A short description of Prashad.",
       image: "/images/dress1.webp",
       
     },
     {
-      title: "White Poshak",
+      title: "White ",
       description: "A short description of Prashad.",
       image: "/images/dress2.jpg",
     
     },
     {
-      title: "Red Poshak",
+      title: "Red ",
       description: "A short description of Prashad.",
       image: "/images/dress3.webp",
     
     },
     {
-      title: "Yellow Poshak",
+      title: "Yellow ",
       description: "A short description of Prashad.",
       image: "/images/d5.jpeg",
     
