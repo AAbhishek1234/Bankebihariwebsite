@@ -61,9 +61,9 @@ const AllEquipment = () => {
         link: "/buy/prashad",
       },
       {
-        title: "Combo",
+        title: "Tulsi Mala",
         description: "A short description of Prashad.",
-        image: "/images/allloket.webp",
+        image: "/images/tulsimala.jpg",
         link: "/buy/prashad",
       },
   ];
