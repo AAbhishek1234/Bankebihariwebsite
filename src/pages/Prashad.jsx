@@ -143,7 +143,7 @@ const PrashadGrid = () => {
       image: "/images/56bhog.webp",
     },
     {
-      title: "Makhan Mishri",
+      title: "MakhanMishri",
       description: "A short description of Prashad.",
       image: "/images/makhanmishri.jpg",
     },
