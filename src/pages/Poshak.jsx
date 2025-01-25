@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Navbar from '../components/Navbar'
 import './poshak.css'
 import Footer from "../components/Footer";
 const Poshak = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Immediately sets the scroll position to the top
+  }, []);
   // Sample product data
   const products = [
     {
