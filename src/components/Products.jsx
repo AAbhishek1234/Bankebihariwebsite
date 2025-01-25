@@ -46,7 +46,7 @@ const ProductGrid = () => {
         title: "Chandan Itar ",
         description: "This is a short description of Product 6.",
         image: "/images/allattribute.webp",
-        link: "/product/allproducts",
+        link: "/product/allequipment",
       },
   ];
 

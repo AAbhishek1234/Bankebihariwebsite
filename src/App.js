@@ -9,6 +9,7 @@ import Poshak from './pages/Poshak'
 import Pratima from './pages/Pratima'
 import Painting from './pages/Painting'
 import Dress from './pages/Dress'
+import AllEquipment from './pages/AllEquipment'
 function App() {
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
         <Route path='/product/pratima' element={<Pratima/>}/>
         <Route path='/product/painting' element={<Painting/>}/>
         <Route path='/product/dress' element={<Dress/>}/>
+        <Route path='/product/allequipment' element={<AllEquipment/>}/>
       </Routes>
     </Router>
     </>

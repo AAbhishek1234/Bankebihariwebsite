@@ -1,75 +1,87 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Navbar from '../components/Navbar'
-import './dress.css'
+import './allequipment.css'
 import Footer from "../components/Footer";
-const Dress = () => {
+const AllEquipment = () => {
   // Sample product data
   const products = [
     {
-      title: "Gopi Dress",
+      title: "Chandan",
       description: "A short description of Prashad.",
-      image: "/images/d2.webp",
+      image: "/images/chandan.jpg",
       link: "https://www.youtube.com/",
     },
     {
-      title: "Pataka",
+      title: "DhoopBatti",
       description: "A short description of Prashad.",
-      image: "/images/d8.jpg",
+      image: "/images/dhoopbatti.jpg",
       link: "/buy/prashad",
     },
     {
-      title: "Kurtas",
+      title: "AgarBatti",
       description: "A short description of Prashad.",
-      image: "/images/d5kurta.jpeg",
+      image: "/images/agarbatti.jpg",
       link: "/buy/prashad",
     },
     {
-      title: "T-Shirt",
+      title: "Sankh",
       description: "A short description of Prashad.",
-      image: "/images/d4t-shirt.jpg",
+      image: "/images/sankh.jpg",
       link: "/buy/prashad",
     },
     {
-      title: "Shirt",
+      title: "Locket",
       description: "A short description of Prashad.",
-      image: "/images/d3shirt.jpeg",
+      image: "/images/locket.jpg",
       link: "/buy/prashad",
     },
     {
-      title: "Kurta Dhoti",
+      title: "Kangan",
       description: "A short description of Prashad.",
-      image: "/images/kurtdhoti.webp",
+      image: "/images/kangan.jpg",
       link: "/buy/prashad",
     },
     {
-      title: "Khichadi",
+      title: "Haridas ji",
       description: "A short description of Prashad.",
-      image: "/images/d7.jpg",
+      image: "/images/haridaslocket.webp",
       link: "/buy/prashad",
     },
     {
       title: "Combo",
       description: "A short description of Prashad.",
-      image: "/images/d6.jpg",
+      image: "/images/allloket.webp",
       link: "/buy/prashad",
     },
+    {
+        title: "Bracelet",
+        description: "A short description of Prashad.",
+        image: "/images/bracelet.jpg",
+        link: "/buy/prashad",
+      },
+      {
+        title: "Combo",
+        description: "A short description of Prashad.",
+        image: "/images/allloket.webp",
+        link: "/buy/prashad",
+      },
   ];
 
   return (
     <>
     <Navbar></Navbar>
-    <Container className="pq-5 dress-grid" style={{marginTop:"9rem"}}>
-      <h2 className="text-center mb-4 dress-grid-title"></h2>
-      <Row className="g-4 dress-grid-row">
+    <Container className="pq-5 equipmet-grid" style={{marginTop:"9rem"}}>
+      <h2 className="text-center mb-4 equipmet-grid-title"></h2>
+      <Row className="g-4 equipmet-grid-row">
         {products.map((product, index) => (
-          <Col xs={6} sm={6} md={4} lg={3} key={index} className="dress-grid-col">
-            <Card className="h-100 dress-card shadow-sm">
+          <Col xs={6} sm={6} md={4} lg={3} key={index} className="equipmet-grid-col">
+            <Card className="h-100 equipmet-card shadow-sm">
               <Card.Img
                 variant="top"
                 src={product.image}
                 alt={product.title}
-                className="dress-card-img"
+                className="equipmet-card-img"
                 style={{
                   height: "180px",
                   objectFit: "fill",
@@ -77,18 +89,18 @@ const Dress = () => {
                   borderTopRightRadius: "10px",
                 }}
               />
-              <Card.Body className="dress-card-body">
-                <Card.Title className="dress-card-title text-center">
+              <Card.Body className="equipmet-card-body">
+                <Card.Title className="equipmet-card-title text-center">
                   {product.title}
                 </Card.Title>
-                <Card.Text className="dress-card-description text-center">
+                <Card.Text className="equipmet-card-description text-center">
                   {/* {product.description} */}
                 </Card.Text>
                 <div className="d-flex justify-content-center">
                   <Button
                     href={product.link}
                     variant="primary"
-                    className="dress-card-button" style={{backgroundColor:"#f28500",border:"none"}}
+                    className="equipmet-card-button" style={{backgroundColor:"#f28500",border:"none"}}
                   >
                     Buy Now
                   </Button>
@@ -104,4 +116,4 @@ const Dress = () => {
   );
 };
 
-export default Dress;
+export default AllEquipment ;
