@@ -33,7 +33,7 @@ const ProductGrid = () => {
     {
       title: "Paintings",
       description: "Spiritual artwork for inspiration.",
-      image: "/images/painting.webp",
+      image: "/images/p8.jpg",
       link: "/product/painting",
     },
     {
