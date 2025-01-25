@@ -22,7 +22,7 @@ const Mala = () => {
       image: "/images/phl.jpg",
     },
     {
-      title: "RudrakshMala",
+      title: "Rudraksha",
       description: "A short description of Prashad.",
       image: "/images/Rudraksha Mala.jpg",
     },
@@ -32,7 +32,7 @@ const Mala = () => {
       image: "/images/bm.jpg",
     },
     {
-      title: "TulsiLeaf Mala",
+      title: "Tulsi Mala",
       description: "A short description of Prashad.",
       image: "/images/tulsig.jpg",
     },
