@@ -18,26 +18,21 @@ const Welcome = () => {
             {/* Sewa Section */}
             <h2 style={{ fontWeight: "bold" }}>Sewa</h2>
             <p>
-              At Millet Sisters, we are dedicated to revolutionizing the way you
+           we are dedicated to revolutionizing the way you
               enjoy baked goods. Our core philosophy aims to:
             </p>
             <ul>
               <li>
-                <strong>Prashad:</strong> Make baked goods that are rich in
-                nutrients, gluten-free, sustainable, plant-based, and easy to
-                digest, supporting a healthier lifestyle for our customers.
+                <strong>Prashad:</strong> Offerings of divine blessings, prepared with devotion and purity, perfect for spiritual ceremonies.
               </li>
               <li>
-                <strong>Mala:</strong> Promote millets and the importance of
-                eating right.
+                <strong>Mala:</strong> Sacred Tulsi and Rudraksha malas for meditation, prayer, and spiritual connection.
               </li>
               <li>
-                <strong>Poshak:</strong> Continuously explore new recipes and
-                baking techniques to improve our offerings.
+                <strong>Poshak:</strong> Beautifully handcrafted attires for Lord Krishna, radiating devotion and artistry.
               </li>
               <li>
-                <strong>Phool Bangla:</strong> Continuously explore new recipes
-                and baking techniques to improve our offerings.
+                <strong>Phool Bangla:</strong>Phool Bangla is a divine floral decoration made with vibrant flowers, creating a heavenly abode for Bihari Ji.
               </li>
             </ul>
           </Col>
