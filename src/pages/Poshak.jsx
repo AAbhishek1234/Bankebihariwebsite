@@ -57,8 +57,9 @@ const Poshak = () => {
   return (
     <>
     <Navbar></Navbar>
+    <div className="productss"style={{ backgroundColor: "#FFB733",borderRadius:"15px",marginLeft:"1rem",marginRight:"1rem",marginTop:"12rem" }}>
     <Container className="pq-5 poshak-grid" style={{marginTop:"9rem"}}>
-      <h2 className="text-center mb-4 poshak-grid-title"></h2>
+      <h2 className="text-center mb-4 poshak-grid-title">Poshak</h2>
       <Row className="g-4 poshak-grid-row">
         {products.map((product, index) => (
           <Col xs={6} sm={6} md={4} lg={3} key={index} className="poshak-grid-col">
@@ -97,6 +98,7 @@ const Poshak = () => {
         ))}
       </Row>
     </Container>
+    </div>
     <Footer></Footer>
     </>
   );

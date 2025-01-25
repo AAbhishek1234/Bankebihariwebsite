@@ -47,8 +47,9 @@ const Mala = () => {
   return (
     <>
     <Navbar></Navbar>
+    <div className="productss"style={{ backgroundColor: "#FFB733",borderRadius:"15px",marginLeft:"1rem",marginRight:"1rem",marginTop:"12rem" }}>
     <Container className="pq-5 prashad-grid" style={{marginTop:"9rem"}}>
-      <h2 className="text-center mb-4 mala-grid-title"></h2>
+      <h2 className="text-center mb-4 mala-grid-title">Mala</h2>
       <Row className="g-4 mala-grid-row">
         {products.map((product, index) => (
           <Col xs={6} sm={6} md={4} lg={3} key={index} className="mala-grid-col">
@@ -87,6 +88,7 @@ const Mala = () => {
         ))}
       </Row>
     </Container>
+    </div>
     <Footer></Footer>
     </>
   );
